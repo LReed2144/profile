@@ -1,0 +1,81 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
+.card-white {
+  background-color: #f7fafb;
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin: 20px auto;
+    text-align: center;
+    width: 50%;
+  }
+
+div {
+    display: block;
+}
+
+body {
+    background: #b0d1ef;
+    color: #948a8f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.img-circle {
+  border-radius: 90%;
+}
+
+.btn-blue {
+    background-color: #978ea2;
+    color: #f9eef2;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-blue:hover {
+  background-color: #514d56;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-weight: lighter;
+}
+
+.icons {
+  color: #575F7D;
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  background-color:
+}
+
+.icons:hover {
+  color: #1c1d1f;
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  background-color:
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
