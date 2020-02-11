@@ -21,8 +21,9 @@ body {
     font-weight: lighter;
 }
 
-.img-circle {
+.img-square {
   border-radius: 90%;
+
 }
 
 .btn-blue {
