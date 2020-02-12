@@ -1,10 +1,13 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
 
 .background-img {
-
+    image: url(images/asphalt-blur-blurred-blurry-701337.jpg);
+    padding: 100px;
+    margin: 100px;
 }
+
 .card-white {
-  background-color: #f7fafb;
+    background-color: #f7fafb;
     padding: 40px;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
     border-radius: 4px;
