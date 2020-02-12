@@ -1,11 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
 
-.background-img {
-    image: url(images/asphalt-blur-blurred-blurry-701337.jpg);
-    padding: 100px;
-    margin: 100px;
-}
-
 .card-white {
     background-color: #f7fafb;
     padding: 40px;
@@ -26,9 +20,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: lighter;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.img-square {
+.img-circle {
   border-radius: 90%;
 
 }
@@ -88,13 +85,10 @@ ul {
   }
 }
 
-body {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto; }
 nav {
   width: 135%;
-  margin: 20px 0; }
+  margin: 20px 0;
+   }
 nav ul {
   list-style: none;
   overflow: hidden; }
