@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
 
 :root {
-  --background: rgba(85, 214, 170, .85);
+  --background: rgba(85, 214, 170, .50);
 }
 
 *, *::before, *::after {
