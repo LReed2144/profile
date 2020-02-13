@@ -16,6 +16,16 @@ header {
   width: 100%;
 }
 
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+}
 nav {
   position: absolute;
   text-align: left;
