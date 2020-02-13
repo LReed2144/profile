@@ -18,9 +18,41 @@ header {
 
 nav {
   position: absolute;
-
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  display: none;
 }
 
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration; none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: 000;
+}
+
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+/*
 .card-white {
     background-color: #f7fafb;
     padding: 40px;
@@ -106,3 +138,5 @@ ul {
   }
 }
 
+
+*/
