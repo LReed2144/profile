@@ -99,6 +99,17 @@ nav a:hover {
 .nav-toggle-label::after {
   top: 50px;
 }
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+  }
+}
 /*
 .card-white {
     background-color: #f7fafb;
