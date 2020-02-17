@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 :root {
-  --background: rgba(0, 214, 170, .85);
+  --background: rgba(0, 0, 0, -.1);
 }
 
 *, *::before, *::after {
@@ -25,7 +25,6 @@ body {
   place-items: center;
 }
 
-/* navigation styles start here */
 
 header {
   background: var(--background);
@@ -35,8 +34,6 @@ header {
   width: 100%;
 }
 
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
@@ -137,14 +134,12 @@ nav a:hover {
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
-  .logo {
-    grid-column: 2 / 3;
+  .portfolio {
+    grid-column: 2 / 1;
+    color: white;
   }
 
   nav {
-    // all: unset; /* this causes issues with Edge, since it's unsupported */
-
-    /* the following lines are not from my video, but add Edge support */
     position: relative;
     text-align: left;
     transition: none;
@@ -152,8 +147,6 @@ nav a:hover {
     background: none;
     top: initial;
     left: initial;
-    /* end Edge support stuff */
-
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
@@ -178,9 +171,9 @@ nav a:hover {
     content: '';
     display: block;
     height: 5px;
-    background: black;
+    background: white;
     position: absolute;
-    top: -.75em;
+    bottom: -.75em;
     left: 0;
     right: 0;
     transform: scale(0, 1);
@@ -192,7 +185,7 @@ nav a:hover {
   }
 }
 
-/*
+
 .card-white {
     background-color: #f7fafb;
     padding: 40px;
@@ -276,7 +269,7 @@ ul {
   .container {
     width: 300px;
   }
-}*/
+}
 
 
 
