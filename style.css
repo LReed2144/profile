@@ -111,7 +111,16 @@ nav a:hover {
   }
 
   .portfolio {
-    grid-column: 2 / span 1;
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+  }
+
+  nav a {
+    opacity: 1;
   }
 }
 /*
