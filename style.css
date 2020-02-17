@@ -49,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-  color: 000;
+  color: #000;
 }
 
 .nav-toggle:checked ~ nav {
@@ -107,7 +107,7 @@ nav a:hover {
 
   header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
   .portfolio {
@@ -133,6 +133,11 @@ nav a:hover {
 
   nav a {
     opacity: 1;
+  }
+
+  nav a::before {
+    content: '';
+
   }
 }
 /*
