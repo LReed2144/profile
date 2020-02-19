@@ -16,9 +16,9 @@ body {
 }
 
 .content {
-  height: 200vh;
+  height: 79vh;
   background-image: url(//unsplash.it/1000/1000);
-  background-color: #333;
+  background-color: #444;
   background-blend-mode: multiply;
   background-size: cover;
   display: grid;
@@ -32,6 +32,7 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  align-content: left;
 }
 
 .nav-toggle {
