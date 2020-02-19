@@ -113,7 +113,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #000;
+  color: #666;
 }
 
 .nav-toggle:checked ~ nav {
@@ -172,7 +172,7 @@ nav a:hover {
     content: '';
     display: block;
     height: 5px;
-    background: white;
+    background: #666;
     position: absolute;
     bottom: -.75em;
     left: 0;
