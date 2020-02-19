@@ -24,7 +24,7 @@ body {
 }
 
 .content {
-  height: 79vh;
+  height: 100vh;
   background-image: url(//unsplash.it/1000/1000);
   background-color: #444;
   background-blend-mode: multiply;
@@ -211,8 +211,11 @@ div {
 }*/
 
 .img-circle {
-  border-radius: 90%;
-
+  border-radius: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
 }
 
 .btn-blue {
