@@ -237,7 +237,9 @@ a {
   display: inline-block;
   padding: 0px 20px;
   font-weight: lighter;
+  text-align: right;
 }
+
 
 .icons {
   color: #575F7D;
@@ -251,26 +253,6 @@ a {
   font-family: 'Lora', serif;
   font-size: 30px;
   background-color:
-}
-
-ul {
-    padding-inline-start: 0px;
-}
-
-@media (max-width: 960px) {
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  .container {
-    width: 300px;
-  }
 }
 
 
