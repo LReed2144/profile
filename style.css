@@ -133,12 +133,12 @@ nav a:hover {
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
-  .portfolio {
+  h1 a {
     grid-column: 2 / 1;
     color: white;
   }
 
-  .portfolio:hover {
+  h1 a:hover {
     color: #666;
   }
 
