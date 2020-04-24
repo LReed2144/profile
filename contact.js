@@ -3,9 +3,9 @@ $(document).ready(function() {
   $(`.button`).click(function(event) {
     event.preventDefault()
     console.log('Clicked')
-    const text = $(text).val()
-    const email = $(email).val()
-    const msg = $(msg).val()
+    const text = $('.text').val()
+    const email = $('.email').val()
+    const msg = $('.msg').val()
     const statusElm = $('.status')
     statusElm.empty()
 
