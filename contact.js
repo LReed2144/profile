@@ -1,8 +1,10 @@
 console.log('it works')
+
 $(document).ready(function() {
-  $(`.button`).click(function(event) {
+  $(`.submit`).click(function(event) {
     event.preventDefault()
     console.log('Clicked')
+
     const text = $('.text').val()
     const email = $('.email').val()
     const msg = $('.msg').val()
@@ -28,6 +30,6 @@ $(document).ready(function() {
     } else {
       event.preventDefault()
       statusElm.append('<div>Please add a message</div>')
-    };
+    }
   })
 })
