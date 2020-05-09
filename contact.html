@@ -25,28 +25,30 @@
   </header>
   <body>
     <div class="content">
-      <form name="myForm" action="https://formspree.io/ler2144@tc.columbia.edu"
-      onsubmit="return validateForm()"
-        method="POST">
-        <ul>
-          <li>
-            <label for="name">Name:</label>
-            <input type="text" class="text" id="name">
-          </li>
-          <li>
-            <label for="mail">E-mail:</label>
-            <input type="email" class="email" id="email">
-          </li>
-          <li>
-            <label for="msg">Message:</label>
-            <textarea id="msg" class="msg" name="fmsg"></textarea>
-          </li>
-          <div class="status"></div>
-          <li class="button">
-            <button type="submit">Send your message</button>
-          </li>
-        </ul>
-      </form>
+      <div class="card-contact">
+        <form name="myForm" action="https://formspree.io/ler2144@tc.columbia.edu"
+        onsubmit="return validateForm()"
+          method="POST">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" class="text" id="name">
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" class="email" id="email">
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" class="msg" name="fmsg"></textarea>
+            </li>
+            <div class="status"></div>
+            <li class="button">
+              <button type="submit">Send your message</button>
+            </li>
+          </ul>
+        </form>
+      </div>
     </div>
     <div>
       <ul class="list-inline" style= "text-align: right;">
