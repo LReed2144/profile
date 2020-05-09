@@ -19,9 +19,9 @@ function validateForm() {
 }
 
 function validateForm() {
-  var email = document.forms["myForm"]["fmsg"].value;
+  var msg = document.forms["myForm"]["fmsg"].value;
 
-  if (email == "") {
+  if (msg == "") {
     alert("Message must be filled out");
     return false;
   }
