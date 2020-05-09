@@ -1,11 +1,20 @@
 console.log('it works')
 
-$(document).ready(function() {
-  $(`.submit`).click(function(event) {
-    event.preventDefault()
-    console.log('Clicked')
+function validateForm() {
+  var name = document.forms["myForm"]["fname"].value;
 
-    const text = $('.text').val()
+  if (name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+
+$(document).ready(function() {
+  $('.submit').click(function(event) {
+    event.preventDefault()
+
+    const text =  $('.text').val()
     const email = $('.email').val()
     const msg = $('.msg').val()
     const statusElm = $('.status')
