@@ -250,25 +250,7 @@ nav a:hover {
     width: 70%;
   }
 
-   .card-ling {
-    background-color: #e9e1cc;
-    padding: 20px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-    border-radius: 4px;
-    margin-left: 0px;
-    text-align: center;
-    width: 100%;
-  }
 
-   .card-yoga {
-    background-color: #e9e1cc;
-    padding: 20px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-    border-radius: 4px;
-    margin-right: 0px;
-    text-align: center;
-    width: 100%;
-  }
 
    .card-projects {
     background-color: #e9e1cc;
