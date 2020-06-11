@@ -209,6 +209,12 @@ nav a:hover {
   }
 }
 
+.link:hover {
+   COLOR: blue;
+   TEXT-DECORATION: underline;
+   font-weight: none;
+ }
+
 
 .card-white {
     background-color: #e9e1cc;
