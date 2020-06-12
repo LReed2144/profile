@@ -9,6 +9,24 @@
   place-items: center;
 }
 
+.content-cv {
+  height: 170vh;
+  background-image: url(//unsplash.it/1000/1000);
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.content-about {
+  height: 220vh;
+  background-image: url(//unsplash.it/1000/1000);
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  }
+
 :root {
   --background: rgba(0, 0, 0, 1);
 }
@@ -100,24 +118,6 @@ body {
   }
 }
 
-
-.content-cv {
-  height: 170vh;
-  background-image: url(//unsplash.it/1000/1000);
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-}
-
-.content-about {
-  height: 220vh;
-  background-image: url(//unsplash.it/1000/1000);
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-  }
 
 .nav-toggle {
   position: absolute !important;
