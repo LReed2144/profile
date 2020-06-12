@@ -23,6 +23,74 @@ body {
   font-weight: 400;
 }
 
+.maincontainer {
+  position: relative;
+  width: 250px;
+  height: 275px;
+  padding: 20px;
+}
+
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.1s ease;
+}
+
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #ffc728;
+  color:#333;
+  border-radius: 20px;
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #fafafa;
+  color:#333;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 25px 100px 100px 50px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*/*/*/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 .content {
   height: 90vh;
   background-image: url(//unsplash.it/1000/1000);
@@ -34,7 +102,7 @@ body {
 }
 
 .content-cv {
-  height: 185vh;
+  height: 170vh;
   background-image: url(//unsplash.it/1000/1000);
   background-color: #777;
   background-blend-mode: multiply;
@@ -44,7 +112,7 @@ body {
 }
 
 .content-about {
-  height: 250vh;
+  height: 220vh;
   background-image: url(//unsplash.it/1000/1000);
   background-color: #777;
   background-blend-mode: multiply;
@@ -248,12 +316,13 @@ nav a:hover {
 
    .card-about {
     background-color: #e9e1cc;
-    padding: 20px;
+    padding: 50px 20px 190px 20px;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
     border-radius: 4px;
     margin: 0px auto;
     text-align: center;
     width: 70%;
+    height: 70%;
   }
 
 
@@ -265,7 +334,7 @@ nav a:hover {
     border-radius: 4px;
     margin: 20px auto;
     text-align: center;
-    width: 70%;
+    width: 95%;
   }
 
 .grid-container {
