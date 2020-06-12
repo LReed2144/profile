@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
+.content {
+  height: 90vh;
+  background-image: url(//unsplash.it/1000/1000);
+  background-color: #777;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
 :root {
   --background: rgba(0, 0, 0, 1);
 }
@@ -91,15 +101,6 @@ body {
   }
 }
 
-.content {
-  height: 90vh;
-  background-image: url(//unsplash.it/1000/1000);
-  background-color: #777;
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-}
 
 .content-cv {
   height: 170vh;
