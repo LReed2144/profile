@@ -11,7 +11,7 @@
 
 .content-cv {
   height: 170vh;
-  background-image: url("images/ocean.jpg"), url(//unsplash.it/1000/1000);
+  background-image: url("images/purple_nature.jpg"), url(//unsplash.it/1000/1000);
   background-blend-mode: multiply;
   background-size: cover;
   display: grid;
@@ -20,7 +20,7 @@
 
 .content-about {
   height: 220vh;
-  background-image: url("images/purple_nature.jpg"), url(//unsplash.it/1000/1000);
+  background-image: url("images/ocean.jpg"), url(//unsplash.it/1000/1000);
   background-blend-mode: multiply;
   background-size: cover;
   display: grid;
