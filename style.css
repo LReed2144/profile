@@ -10,7 +10,7 @@
 }
 
 .content-cv {
-  height: 170vh;
+  height: 220vh;
   background-image: url("images/purple_nature.jpg"), url(//unsplash.it/1000/1000);
   background-blend-mode: multiply;
   background-size: cover;
