@@ -1,32 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
-.content {
-  height: 90vh;
-  background-image: url("images/new_york.jpg"), url(//unsplash.it/1000/1000);
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-}
-
-.content-cv {
-  height: 220vh;
-  background-image: url("images/purple_nature.jpg"), url(//unsplash.it/1000/1000);
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-}
-
-.content-about {
-  height: 220vh;
-  background-image: url("images/ocean.jpg"), url(//unsplash.it/1000/1000);
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-  }
-
 :root {
   --background: rgba(0, 0, 0, 1);
 }
@@ -34,21 +7,173 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-header {
-  background: var(--background);
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  align-content: left;
+
+  /* front page */
+  .content {
+    height: 90vh;
+    background-image: url("images/new_york.jpg"), url(//unsplash.it/1000/1000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    align-items: center;
+    padding-top: 10%;
+
+  }
+
+  .card-white {
+    background-color: var(--background-color);
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    text-align: left;
+    max-width: 40%;
+    height: auto;
+    padding-bottom:0%;
+    border-style: solid;
+    border-width: 3px;
+  }
+
+  .white-card-two {
+    background-color: var(--background-color);
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    text-align: left;
+    max-width: 40%;
+    padding-bottom:0%;
+    border-style: solid;
+    border-width: 3px;
+  }
+
+   /* smaller version front page */
+@media only screen and (max-width: 600px) {
+.content {
+  height: 150vh;
+  background-image: url("images/new_york.jpg"), url(//unsplash.it/1000/1000);
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around; 
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10%;
 }
 
-body {
-  margin: 0;
-  background: #222;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
+.card-white {
+  background-color: var(--background-color);
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  text-align: left;
+  max-width: 90%;
+  padding-bottom:0%;
+  flex-shrink: 3;
+  border-style: solid;
+  border-width: 3px;
 }
+.white-card-two {
+  background-color: var(--background-color);
+  padding: 20px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  text-align: left;
+  max-width: 90%%;
+
+  border-style: solid;
+  border-width: 3px;
+  padding-bottom:0%;
+  flex-shrink: 3;
+}
+}
+
+/* front page general  */
+.card-white h2 {
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+}
+
+.intro {
+  border-style: solid;
+  border-width: 3px;
+}
+
+.contactlink {
+  color: var(--background);
+  text-decoration: none;
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+.contactlink:hover {
+  color:  #666;
+  text-decoration: none;
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+/* about page */
+
+.content-about {
+  height: 300vh;
+  background-image: url("images/ocean.jpg"), url(//unsplash.it/1000/1000);
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+
+  .card-about {
+    background-color: var(--background-color);
+    padding: 10%;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin: 0px auto;
+    text-align: left;
+    max-width: 70%;
+    border-style: solid;
+    border-width: 3px;
+  }
+
+  .card-about h1{
+    text-align: center;
+  }
+
+  .card-about h2{
+    text-align: center;
+  }
+
+  .githublink {
+    color: var(--background);
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: oblique;
+  }
+
+  .githublink:hover {
+    color:  #666;
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: oblique;
+  }
+ 
+  .card-projects {
+    background-color: var(--background-color);
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin: 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+  }
+
 
 .maincontainer {
   position: relative;
@@ -70,46 +195,122 @@ body {
   transform: rotateY(180deg);
 }
 
-.thefront {
+.thefrontone {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: #ffc728;
+  background: #28b7ff;
   color:#333;
   border-radius: 20px;
+  font-size: larger;
 }
 
-.theback {
+.thefronttwo {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: #fafafa;
+  background: #e88753;
+  color:#333;
+  border-radius: 20px;
+  font-size: larger;
+}
+ 
+
+.theback {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: var(--background-color);
   color:#333;
   transform: rotateY(180deg);
   border-radius: 20px;
+  padding: 10%;
+}
+
+.theback a {
+    color: var(--background);
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.theback a:hover {
+  color: #666;
+  text-decoration: none;
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: larger;
 }
 
 /* Float four columns side by side */
 .column {
+
+  padding: 25px 100px 100px 50px;
+
+}
+
+/* responsive design */
+@media only screen and (min-width: 800px) {
+/* Remove extra left and right margins, due to padding in columns  */
+ .row {
+  margin: 0 -5px;
+float: center;} 
+
+/* Clear floats after the columns */
+ .row:after { 
+   content: ""; 
+   display: flex;
+  justify-content: center;
+} 
+
+/* Float four columns side by side */
+ .column {
   float: left;
   width: 50%;
   padding: 25px 100px 100px 50px;
-}
+} 
 
 /* Remove extra left and right margins, due to padding in columns */
 .row {margin: 0 -5px;}
 
 /* Clear floats after the columns */
-.row:after {
+ .row:after {
   content: "";
   display: table;
   clear: both;
 }
+}
+
+.content-cv {
+  height: 220vh;
+  background-image: url("images/purple_nature.jpg"), url(//unsplash.it/1000/1000);
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  align-content: left;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
 
 
-/*/*/*/* Responsive columns - one column layout (vertical) on small screens */
+
+ Responsive columns - one column layout (vertical) on small screens
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -117,7 +318,6 @@ body {
     margin-bottom: 20px;
   }
 }
-
 
 .nav-toggle {
   position: absolute !important;
@@ -174,6 +374,7 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+  font-family: 'Work Sans', sans-serif;
 }
 
 nav ul {
@@ -208,8 +409,15 @@ nav a:hover {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
+h1 a {
+  grid-column: 2 / 1;
+  color: #e9e1cc;
+}
 
-@media screen and (min-width: 800px) {
+h1 a:hover {
+  color: #666;
+}
+@media screen and (min-width: 600px) {
   .nav-toggle-label {
     display: none;
   }
@@ -276,64 +484,45 @@ nav a:hover {
 }
 
 .link:hover {
-   COLOR: blue;
-   TEXT-DECORATION: underline;
+   color: blue;
+   text-decoration: none;
    font-weight: none;
  }
 
 
-.card-white {
-    background-color: #e9e1cc;
-    padding: 40px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-    border-radius: 4px;
-    margin: 20px auto;
-    text-align: center;
-    width: 30%;
-  }
+ :root {
+  --background-color: #f8f3e9;
+}
+
 
   .card-cv {
-    background-color: #e9e1cc;
+    background-color: var(--background-color);
     padding: 40px;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
     border-radius: 4px;
     margin: 20px auto;
     text-align: center;
     width: 70%;
+    border-style: solid;
+    border-width: 3px;
   }
 
   .card-contact {
-    background-color: #e9e1cc;
+    background-color: var(--background-color);
     padding: 40px;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
     border-radius: 4px;
     margin: 20px auto;
     text-align: center;
     width: 50%;
-  }
-
-   .card-about {
-    background-color: #e9e1cc;
-    padding: 10px 20px 190px 20px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-    border-radius: 4px;
-    margin: 0px auto;
-    text-align: center;
-    width: 70%;
-    height: 70%;
+    border-style: solid;
+    border-width: 3px;
   }
 
 
 
-   .card-projects {
-    background-color: #e9e1cc;
-    padding: 20px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-    border-radius: 4px;
-    margin: 20px auto;
-    text-align: center;
-    width: 95%;
-  }
+
+ 
 
 .grid-container {
   display: grid;
@@ -349,16 +538,6 @@ div {
   text-align: left;
 }
 
-/*body {
-    background: #222831;
-    color: #948a8f;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-}*/
 
 .img-circle {
   border-radius: 20%;
