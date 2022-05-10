@@ -61,17 +61,16 @@ footer {
   }
 
    /* smaller version front page */
-/* @media only screen and (max-width: 600px) { */
-/* .content { */
-  /* background-image: url("images/new_york.jpg"), url(//unsplash.it/1000/1000);
+ @media only screen and (max-width: 768px) { 
+  .content {
+   background-image: url("images/new_york.jpg"), url(//unsplash.it/1000/1000);
   background-blend-mode: multiply;
-  background-size: cover; */
-  /* display: flex;
+  background-size: cover;
+  display: flex;
   justify-content: center; 
-  
   align-items: center;
-  flex-wrap: wrap; */
-  /* padding-top: 10%;
+  flex-wrap: wrap; 
+  padding-top: 10%;
 }
 
 .card-white {
@@ -97,7 +96,7 @@ footer {
   border-width: 3px;
   padding-bottom:0%;
 }
-} */
+} 
 
 /* front page general  */
 .card-white h2 {
@@ -314,7 +313,7 @@ body {
 
 
  /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   .column {
     width: 100%;
     display: block;
@@ -422,7 +421,7 @@ h1 a:hover {
 }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   .nav-toggle-label {
     display: none;
   }
