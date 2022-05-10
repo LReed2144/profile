@@ -181,7 +181,7 @@ footer {
     background-size: cover;
     display:flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .card-projects {
@@ -197,6 +197,8 @@ footer {
     border-width: 3px;
     text-align: center;
   }
+
+
 
 .maincontainer {
   position: relative;
