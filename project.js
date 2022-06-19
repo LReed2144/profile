@@ -1,7 +1,11 @@
-const card = document.getElementById("card")
+document.addEventListener("DOMContentLoaded", function () {
+    const card = document.getElementById("card")
 
 card.addEventListener("click",flipCard);
 
 function flipCard() {
     card.classList.toggle("flipCard");
 }
+  });
+
+

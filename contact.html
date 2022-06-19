@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <header>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script type="text/javascript" src="contact.js"></script>
     <script src="contact.js"></script>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    </head>
+    <body>
+  <header>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
+    <script src="contact.js"></script>
     <h1><a href="index.html">LR</a></h1>
     <title>portfolio</title>
     <style type="text/css"></style>
@@ -23,12 +31,10 @@
       <span></span>
     </label>
   </header>
-  <body>
     <div class="content">
       <div class="card-contact">
-        <form name="myForm" action="https://formspree.io/ler2144@tc.columbia.edu"
-          onsubmit="return validateForm()"
-          method="POST">
+        <!-- <form name="myForm" action="https://formspree.io/ler2144@tc.columbia.edu" onsubmit="return validationForm()" method="POST"> -->
+        <form id="comment-form" method="post" action="https://cs12.net/form/submit.php">
           <ul>
             <li>
               <label for="name">Name:</label>
@@ -44,13 +50,13 @@
             </li>
             <div class="status"></div>
             <li class="button">
-              <button type="submit">Send your message</button>
-            </li>
-          </ul>
+              <button type="submit">Send your message</button></li>
+              </ul>
+              <input type="hidden" name="__mailto" value="ler2144@tc.columbia.edu">
+              <input type="hidden" name="__mailkey" value="cscie12-fall-2021-dph445">
         </form>
       </div>
     </div>
-    </body>
     <footer>
     <div>
       <ul class="list-inline" style= "text-align: right;">
@@ -78,4 +84,5 @@
       </ul>
     </div>
   </footer>
+  </body>
 </html>
