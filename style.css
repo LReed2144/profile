@@ -167,7 +167,7 @@ footer {
   }
 
   .githublink:hover {
-    color:  #666;
+    color: blue;
     text-decoration: none;
     font-weight: bolder;
     font-style: oblique;
@@ -265,7 +265,7 @@ footer {
 }
 
 .theback a:hover {
-  color: #666;
+  color: blue;
   text-decoration: none;
   font-weight: bolder;
   font-style: oblique;
