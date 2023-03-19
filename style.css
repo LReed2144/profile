@@ -202,14 +202,17 @@ footer {
 
 .maincontainer {
   position: relative;
-  width: 250px;
-  height: 275px;
+  /* width: 250px;
+  height: 275px; */
   padding: 20px;
 }
 
 
 .thecard {
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -274,18 +277,18 @@ footer {
 .flipCard {
   transform: rotateY(180deg);
 }
-/* .row {
+.row {
  
-} */
+}
 
 /* Float four columns side by side  */
-  /* @media only screen and (min-width: 800px) { 
+ @media only screen and (min-width: 800px) { 
 .column {
   float: left;
   width: 100%;
   padding: 25px 100px 100px 50px;
  }
-}   */
+}  
 
 .column {
   padding: 25px 100px 100px 50px;
