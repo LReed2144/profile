@@ -181,29 +181,29 @@ footer {
     background-size: cover;
     display:flex;
     justify-content: center;
+    padding; 
     /* flex-wrap: wrap; */
   }
 
   .card-projects {
     background-color: var(--background-color);
-    padding: 10%;
+    padding: 20%;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
     border-radius: 4px;
     text-align: left;
-    max-width: 90%;
+    
     padding-bottom: 20%;
     margin: 20% 10% 20% 10%;
     border-style: solid;
     border-width: 3px;
-    text-align: center;
+    text-align: left;
   }
 
 
 
 .maincontainer {
-  position: relative;
-  /* width: 250px;
-  height: 275px; */
+  width: 250px;
+  height: 275px;
   padding: 20px;
 }
 
@@ -212,7 +212,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin: 0.5rem;
-
+  float: left;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -225,7 +225,6 @@ footer {
 }
 
 .thefrontone {
-  position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -237,7 +236,6 @@ footer {
 }
 
 .thefronttwo {
-  position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -277,22 +275,23 @@ footer {
 .flipCard {
   transform: rotateY(180deg);
 }
-.row {
- 
-}
+/* .row {
+ float: left;
+} */
 
 /* Float four columns side by side  */
- @media only screen and (min-width: 800px) { 
+ /* @media only screen and (min-width: 500px) { 
 .column {
   float: left;
   width: 100%;
   padding: 25px 100px 100px 50px;
  }
-}  
+}   */
 
-.column {
+/* .column {
+  
   padding: 25px 100px 100px 50px;
-} 
+}  */
 
 
 
