@@ -186,12 +186,11 @@ footer {
 
   .card-projects {
     background-color: var(--background-color);
-    padding: 20%;
+    padding: 5%;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
     border-radius: 4px;
     text-align: left;
-    
-    padding-bottom: 20%;
+   
     margin: 20% 10% 20% 10%;
     border-style: solid;
     border-width: 3px;
@@ -221,17 +220,6 @@ footer {
   transform: rotateY(180deg);
 }
 
-.thefrontone {
-  position: absolute;
-  width: 250px;
-  height: 400px;
-  backface-visibility: hidden;
-  background: #28b7ff;
-  color:#333;
-  border-radius: 20px;
-  font-size: larger;
-  text-align: center;
-}
 
 .thefronttwo {
   position: absolute;
