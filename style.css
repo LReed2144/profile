@@ -264,6 +264,16 @@ footer {
   transform: rotateY(180deg);
 }
 
+ .projectlinks a {
+  color: blue;
+}
+
+.projectlinks a:hover {
+  color:blue;
+  font-size: larger;
+  font-weight: bolder;
+}
+
 
 /* Float four columns side by side  */
   /* @media only screen and (min-width: 800px) { 
@@ -278,7 +288,7 @@ footer {
   padding: 25px 100px 100px 50px;
 } 
 
-
+/* -------CV Page------- */
 .content-cv {
   background-image: url("images/purple_nature.jpg"), url(//unsplash.it/1000/1000);
   background-blend-mode: multiply;
