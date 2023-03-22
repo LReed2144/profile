@@ -201,22 +201,18 @@ footer {
 
 
 .maincontainer {
-  display: flex;
-  justify-content: wrap;
-  
-  width: 250px;
-  height: 275px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px; 
+  column-gap: 10px;
+  row-gap: 15px;
+  grid-gap: 1rem;
   padding: 20px;
 }
 
 
 .thecard {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0.5rem;
-
-  width: 100%;
-  height: 100%;
+  margin: 0.5rem;  
   transform-style: preserve-3d;
   transition: all 0.1s ease;
 }
@@ -228,8 +224,8 @@ footer {
 
 .thefrontone {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 400px;
   backface-visibility: hidden;
   background: #28b7ff;
   color:#333;
