@@ -164,6 +164,7 @@ footer {
     text-decoration: none;
     font-weight: bolder;
     font-style: oblique;
+    color: blue;
   }
 
   .githublink:hover {
@@ -171,6 +172,7 @@ footer {
     text-decoration: none;
     font-weight: bolder;
     font-style: oblique;
+    font-size: larger;
   }
  
   /* project page */
